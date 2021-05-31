@@ -8,8 +8,8 @@ import AvatarTwo from '../../assets/images/avatar2.svg';
 import AvatarThree from '../../assets/images/avatar3.svg';
 
 const Sidebar = ({ title, address, properties }) => {
-    const [personId, setPersonId] = useState(null);
-    const [tabId, setTabId] = useState(null);
+    const [personId, setPersonId] = useState(0);
+    const [tabId, setTabId] = useState(1);
     const [people, setPeople] = useState([]);
     const [tabs, setTabs] = useState([]);
 
@@ -59,7 +59,7 @@ const Sidebar = ({ title, address, properties }) => {
                     {properties} Properties
                 </span>
             </div>
-            <div className="tabs__wrapper">
+            <div className="sidebar__tabs-wrapper">
                 {tabs.map((tab, i) => {
                     return (
                         <Tabs
@@ -72,21 +72,33 @@ const Sidebar = ({ title, address, properties }) => {
                 })}
             </div>
             <div className="sidebar__card-wrapper">
-                {people.map((person, i) => {
-                    return (
-                        <Card
-                            setId={() => setPersonId(person.id)}
-                            isActive={personId === i}
-                            key={person.id}
-                            name={person.name}
-                            title={person.title}
-                            properties={person.properties}
-                            avatar={person.avatar}
-                        />
-                    );
-                })}
-
-                <Button text="Add" />
+                {tabId === 0 ? (
+                    <div
+                        style={{
+                            height: '22vh',
+                            display: 'flex',
+                            alignItems: 'center',
+                            fontSize: '24px',
+                        }}
+                    >
+                        My Profile
+                    </div>
+                ) : (
+                    people.map((person, i) => {
+                        return (
+                            <Card
+                                setId={() => setPersonId(person.id)}
+                                isActive={personId === i}
+                                key={person.id}
+                                name={person.name}
+                                title={person.title}
+                                properties={person.properties}
+                                avatar={person.avatar}
+                            />
+                        );
+                    })
+                )}
+                {tabId === 1 ? <Button text="Add" /> : null}
             </div>
         </div>
     );

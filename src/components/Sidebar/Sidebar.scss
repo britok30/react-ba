@@ -35,6 +35,11 @@
         letter-spacing: -0.2px;
     }
 
+    &__tabs-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
     &__properties {
         display: block;
         margin-bottom: 18px;
