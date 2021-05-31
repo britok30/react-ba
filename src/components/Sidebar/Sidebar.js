@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
+import Tabs from '../Tabs/Tabs';
 import Button from '../Button/Button';
 import './Sidebar.scss';
 import AvatarOne from '../../assets/images/avatar1.svg';
@@ -7,9 +8,10 @@ import AvatarTwo from '../../assets/images/avatar2.svg';
 import AvatarThree from '../../assets/images/avatar3.svg';
 
 const Sidebar = ({ title, address, properties }) => {
-    const [active, setActive] = useState(false);
     const [personId, setPersonId] = useState(null);
+    const [tabId, setTabId] = useState(null);
     const [people, setPeople] = useState([]);
+    const [tabs, setTabs] = useState([]);
 
     useEffect(() => {
         setPeople([
@@ -35,6 +37,17 @@ const Sidebar = ({ title, address, properties }) => {
                 avatar: AvatarOne,
             },
         ]);
+
+        setTabs([
+            {
+                id: 0,
+                label: 'My Profile',
+            },
+            {
+                id: 1,
+                label: 'Owners',
+            },
+        ]);
     }, []);
 
     return (
@@ -46,11 +59,18 @@ const Sidebar = ({ title, address, properties }) => {
                     {properties} Properties
                 </span>
             </div>
-
-            <div className="sidebar__header">
-                
+            <div className="tabs__wrapper">
+                {tabs.map((tab, i) => {
+                    return (
+                        <Tabs
+                            key={tab.id}
+                            label={tab.label}
+                            isActive={tabId === i}
+                            setId={() => setTabId(tab.id)}
+                        />
+                    );
+                })}
             </div>
-
             <div className="sidebar__card-wrapper">
                 {people.map((person, i) => {
                     return (

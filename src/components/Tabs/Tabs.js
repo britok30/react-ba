@@ -1,15 +1,14 @@
 import React from 'react';
+import './Tabs.scss';
 
-const Tabs = () => {
+const Tabs = ({ label, setId, isActive }) => {
     return (
-        <div className="tab">
+        <div className="tabs">
             <div
-                onClick={() => setActive(!active)}
-                className={`tab__header-item ${
-                    active ? 'tab__header-item--active' : ''
-                }`}
+                onClick={() => setId()}
+                className={`tabs__item ${isActive ? 'tabs__item--active' : ''}`}
             >
-                My Profile
+                {label}
             </div>
         </div>
     );
