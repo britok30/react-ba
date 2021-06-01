@@ -1,0 +1,24 @@
+.properties {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 496px;
+        margin-bottom: 8px;
+
+        &-text {
+            font-size: 16px;
+            line-height: 24px;
+            color: #5f4e90;
+
+            &--edit {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.75px;
+                text-transform: uppercase;
+                color: #5f4e90;
+            }
+        }
+    }
+}

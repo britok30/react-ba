@@ -1,0 +1,45 @@
+.property-card {
+    &__container {
+        width: 496px;
+        height: 84px;
+        background: #ffffff;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        box-shadow: 0 4px 2px -2px rgb(180, 180, 180);
+        display: flex;
+    }
+
+    &__image {
+        margin-right: 16px;
+    }
+
+    &__name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        letter-spacing: 0.25px;
+        color: rgba(34, 34, 34, 0.87);
+    }
+
+    &__address {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.2px;
+        color: rgba(34, 34, 34, 0.6);
+
+        &-text {
+            display: block;
+        }
+    }
+
+    &__inner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 380px;
+    }
+
+    &__chevron {
+        width: 6px;
+    }
+}
