@@ -11,6 +11,13 @@
         padding-bottom: 13px;
         margin-bottom: 14px;
 
+        &-text {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: rgba(34, 34, 34, 0.87);
+        }
+
         &:after {
             content: '';
             position: absolute;
@@ -27,6 +34,10 @@
 
         &-text {
             display: block;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: rgba(34, 34, 34, 0.87);
         }
     }
 }

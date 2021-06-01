@@ -54,4 +54,14 @@
         letter-spacing: 0.25px;
         color: rgba(34, 34, 34, 0.6);
     }
+
+    &__inner-container {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+    }
+
+    &__chevron {
+        width: 6px;
+    }
 }
