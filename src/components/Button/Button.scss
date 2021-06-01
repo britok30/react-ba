@@ -3,9 +3,7 @@
     height: 36px;
     background: #00bfb2;
     border-radius: 18px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+
     text-align: center;
     letter-spacing: 0.75px;
     text-transform: uppercase;
@@ -15,6 +13,18 @@
     display: block;
     margin: 38px auto 0;
     transition: ease 0.4s all;
+
+    &__icon {
+        margin-right: 17px;
+        vertical-align: middle;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        vertical-align: middle;
+    }
 
     &:hover {
         background: #006962;

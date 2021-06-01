@@ -1,9 +1,19 @@
-.sidebar {
+.profile {
     display: flex;
-    width: 320px;
-    flex-direction: column;
-    flex: 0.25;
-    height: 100vh;
+
+    &__side {
+        width: 320px;
+        flex-direction: column;
+        flex: 0.25;
+        height: 100vh;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        flex: 0.75;
+        height: 100vh;
+    }
 
     &__heading {
         // display: flex;
