@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './Properties.scss';
 import Interior from '../../assets/images/interior.svg';
 import PropertyCards from '../PropertyCards/PropertyCards';
+import GoodStatus from '../../assets/images/status-good.svg';
+import BadStatus from '../../assets/images/status-bad.svg';
+import WarningStatus from '../../assets/images/status-warning.svg';
 
 const Properties = () => {
     const [properties, setProperties] = useState([]);
@@ -18,6 +21,7 @@ const Properties = () => {
                         cityState: 'Beaufort, SC',
                         zip: 29928,
                     },
+                    status: GoodStatus,
                 },
                 {
                     id: 1,
@@ -28,6 +32,7 @@ const Properties = () => {
                         cityState: 'Beaufort, SC',
                         zip: 29928,
                     },
+                    status: BadStatus,
                 },
                 {
                     id: 2,
@@ -38,6 +43,7 @@ const Properties = () => {
                         cityState: 'Beaufort, SC',
                         zip: 29928,
                     },
+                    status: WarningStatus,
                 },
             ]);
         })();

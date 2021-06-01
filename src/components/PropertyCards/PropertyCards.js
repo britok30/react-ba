@@ -11,6 +11,11 @@ const PropertyCards = ({ property }) => {
                     src={property.image}
                     alt="property"
                 />
+                <img
+                    className="property-card__status"
+                    src={property.status}
+                    alt="status"
+                />
                 <div className="property-card__inner-container">
                     <div className="property-card__details">
                         <span className="property-card__name">

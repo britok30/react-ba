@@ -1,5 +1,6 @@
 .property-card {
     &__container {
+        position: relative;
         width: 496px;
         height: 84px;
         background: #ffffff;
@@ -17,6 +18,15 @@
 
     &__image {
         margin-right: 16px;
+        position: relative;
+    }
+
+    &__status {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
     }
 
     &__name {
