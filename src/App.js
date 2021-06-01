@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss';
 import Profile from './components/Profile/Profile';
-import AvatarOne from './assets/images/avatar1.svg';
-import AvatarTwo from './assets/images/avatar2.svg';
-import AvatarThree from './assets/images/avatar3.svg';
+import MaleAvatar from './assets/images/male.svg';
+import FemaleAvatar from './assets/images/female.svg';
 
 function App() {
     const [people, setPeople] = useState([]);
@@ -24,7 +23,7 @@ function App() {
                     },
                     title: 'Owner',
                     properties: 3,
-                    avatar: AvatarTwo,
+                    avatar: FemaleAvatar,
                 },
                 {
                     id: 1,
@@ -39,7 +38,7 @@ function App() {
                     },
                     title: 'Owner',
                     properties: 23,
-                    avatar: AvatarThree,
+                    avatar: MaleAvatar,
                 },
                 {
                     id: 2,
@@ -54,7 +53,7 @@ function App() {
                     },
                     title: 'Owner',
                     properties: 41,
-                    avatar: AvatarOne,
+                    avatar: FemaleAvatar,
                 },
             ]);
         })();
