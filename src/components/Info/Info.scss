@@ -1,0 +1,32 @@
+.info {
+    &__container {
+        width: 496px;
+    }
+
+    &__email,
+    &__phone {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding-bottom: 13px;
+        margin-bottom: 14px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 496px;
+            height: 1px;
+            background: rgba(34, 34, 34, 0.08);
+            bottom: 0px;
+        }
+    }
+
+    &__address {
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            display: block;
+        }
+    }
+}

@@ -34,7 +34,7 @@ const Main = ({ people, personId }) => {
                             </div>
                         </div>
                         <div className="main__info">
-                            <Info />
+                            <Info people={people} personId={personId} />
                         </div>
                     </div>
                 )}
