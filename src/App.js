@@ -18,7 +18,7 @@ function App() {
                     phone: '(281) 286-9741',
                     address: {
                         street: '1234 Main St.',
-                        unit: 'Suite 400',
+                        unit: 'Suite 560',
                         cityState: 'Houston, TX',
                         zip: 77001,
                     },
@@ -32,8 +32,8 @@ function App() {
                     email: 'm.anderson@example.com',
                     phone: '(972) 559-5899',
                     address: {
-                        street: '1234 Main St.',
-                        unit: 'Suite 400',
+                        street: '1234 Church Ave',
+                        unit: 'Suite 380',
                         cityState: 'Houston, TX',
                         zip: 77001,
                     },
@@ -47,8 +47,8 @@ function App() {
                     email: 's.ridenouer@example.com',
                     phone: '(281) 900-5467',
                     address: {
-                        street: '1234 Main St.',
-                        unit: 'Suite 400',
+                        street: '1234 West Blvd',
+                        unit: 'Suite 368',
                         cityState: 'Houston, TX',
                         zip: 77001,
                     },

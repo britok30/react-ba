@@ -29,7 +29,8 @@ const Info = ({ people, personId }) => {
                             {people[personId].address.unit}
                         </span>
                         <span className="info__address-text">
-                            {people[personId].address.cityState}
+                            {people[personId].address.cityState}{' '}
+                            {people[personId].address.zip}
                         </span>
                     </div>
                     <img src={NavIcon} alt="nav-icon" />
