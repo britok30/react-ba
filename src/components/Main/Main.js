@@ -1,5 +1,6 @@
 import React from 'react';
 import Info from '../Info/Info';
+import Properties from '../Properties/Properties';
 import PencilIcon from '../../assets/images/pencil-icon.svg';
 import ChatIcon from '../../assets/images/chat-icon.svg';
 import './Main.scss';
@@ -35,6 +36,9 @@ const Main = ({ people, personId }) => {
                         </div>
                         <div className="main__info">
                             <Info people={people} personId={personId} />
+                        </div>
+                        <div className="main__properties">
+                            <Properties />
                         </div>
                     </div>
                 )}
