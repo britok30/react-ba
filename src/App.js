@@ -14,6 +14,9 @@ function App() {
                 {
                     id: 0,
                     name: 'Jana Bridges',
+                    email: 'j.bridges@example.com',
+                    number: '(555) 555-5555',
+                    address: '1234 Main St. Suite 400 Houston, TX 77001',
                     title: 'Owner',
                     properties: 3,
                     avatar: AvatarTwo,
@@ -21,6 +24,9 @@ function App() {
                 {
                     id: 1,
                     name: 'Michael Anderson',
+                    email: 'm.anderson@example.com',
+                    number: '(555) 555-5555',
+                    address: '1234 Main St. Suite 400 Houston, TX 77001',
                     title: 'Owner',
                     properties: 23,
                     avatar: AvatarThree,
@@ -28,6 +34,9 @@ function App() {
                 {
                     id: 2,
                     name: 'Sophia Ridenouer',
+                    email: 's.ridenouer@example.com',
+                    number: '(555) 555-5555',
+                    address: '1234 Main St. Suite 400 Houston, TX 77001',
                     title: 'Owner',
                     properties: 41,
                     avatar: AvatarOne,
